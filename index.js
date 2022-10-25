@@ -47,6 +47,7 @@ function submitForm(){
           fetch("/query",options)
             .then(res=>res.json())
             .then(data=>{
+                console.log(data);
                 document.getElementById("Name").value="";
                 document.getElementById("Email").value="";
                 document.getElementById("Subject").value="";
